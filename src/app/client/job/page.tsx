@@ -7,7 +7,7 @@ import React from 'react'
 const Jobs = () => {
     return (
         <>
-        <div className="max-h-screen">
+        <div className="min-h-screen">
             <main >
                 <JobList />
             </main>
