@@ -38,7 +38,7 @@ const AdminSidebar: React.FC<{ handleLogout: () => void }> = ({ handleLogout }) 
         className="text-2xl font-bold mb-6 text-center cursor-pointer"
         onClick={() => router.push("/admin")}
       >
-        Admin Dashboard
+        Admin JobHuntly
       </h2>
       
       <ul className="space-y-4 flex-grow">

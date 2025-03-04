@@ -3,9 +3,8 @@ import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaTwitter } from "rea
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-10 px-5 mt-3">
+    <footer className="bg-gray-900 text-white py-10 px-5 mt-3 max-h-full">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Left Section */}
         <div>
           <h2 className="text-xl font-bold flex items-center">
             <span className="bg-blue-500 rounded-full w-4 h-4 inline-block mr-2"></span>
@@ -16,7 +15,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Middle Section */}
         <div className="flex justify-between md:justify-around">
           <div>
             <h3 className="font-semibold">About</h3>
@@ -39,7 +37,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Right Section */}
         <div>
           <h3 className="font-semibold">Get job notifications</h3>
           <p className="text-gray-400 text-sm mt-2">The latest job news, articles, sent to your inbox weekly.</p>

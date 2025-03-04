@@ -14,7 +14,6 @@ const categories = [
 export default function ExploreByCategory() {
   return (
     <section className="container mx-auto px-4 py-10">
-      {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
         <h2 className="text-3xl font-bold text-center md:text-left">
           Explore by <span className="text-blue-500">category</span>
@@ -24,19 +23,18 @@ export default function ExploreByCategory() {
         </a>
       </div>
 
-      {/* Grid Categories */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {categories.map((category) => (
           <div
             key={category.name}
-            className="p-4 rounded-xl bg-gray-200 border shadow-md flex flex-col gap-3 transition 
+            className="p-3 rounded-lg bg-gray-200 border shadow-md flex flex-col gap-2 transition 
             hover:bg-gray-300 hover:text-black hover:shadow-lg transform hover:scale-105 cursor-pointer"
           >
-            <span className="text-4xl">{category.icon}</span>
-            <h3 className="text-lg font-semibold">{category.name}</h3>
-            <p className="text-sm text-gray-500 hover:text-white">{category.jobs} jobs available</p>
+            <span className="text-3xl">{category.icon}</span>
+            <h3 className="text-md font-semibold">{category.name}</h3>
+            <p className="text-xs text-gray-500 hover:text-white">{category.jobs} jobs available</p>
             <div className="flex justify-end">
-              <ArrowRight className="w-5 h-5 text-gray-500 hover:text-black transition" />
+              <ArrowRight className="w-4 h-4 text-gray-500 hover:text-black transition" />
             </div>
           </div>
         ))}
